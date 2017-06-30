@@ -2,15 +2,17 @@ require('log4js').configure(__dirname + '/log4js.json');
 var config = {
     development: {
         port: 3000,
+        gateway: 'http://api.mx.jamma.cn',
         modules: {
             'passport': {
                 module: process.cwd() + '/lib'
             },
-            'jm-passport-mongodb': {}
+            'jm-passport-mobile': {}
         }
     },
     production: {
         port: 3000,
+        gateway: 'http://api.mx.jamma.cn',
         redis: 'redis://redis.db',
         db: 'mongodb://mongo.db/passport',
         tokenExpire: 3600,
@@ -20,7 +22,7 @@ var config = {
             'passport': {
                 module: process.cwd() + '/lib'
             },
-            'jm-passport-mongodb': {}
+            'jm-passport-mobile': {}
         }
     }
 };
