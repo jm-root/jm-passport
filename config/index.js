@@ -7,7 +7,8 @@ var config = {
             'passport': {
                 module: process.cwd() + '/lib'
             },
-            'jm-passport-mobile': {}
+            'jm-passport-mobile': {},
+            'jm-passport-mongodb': {}
         }
     },
     production: {
@@ -22,7 +23,8 @@ var config = {
             'passport': {
                 module: process.cwd() + '/lib'
             },
-            'jm-passport-mobile': {}
+            'jm-passport-mobile': {},
+            'jm-passport-mongodb': {}
         }
     }
 };
@@ -30,5 +32,8 @@ var config = {
 var env = process.env.NODE_ENV || 'development';
 config = config[env] || config['development'];
 config.env = env;
+
+if(process.env['disablePassportMobile']) delete config.modules['jm-passport-mobile'];
+if(process.env['disablePassportMongodb']) delete config.modules['jm-passport-mongodb'];
 
 module.exports = config;
