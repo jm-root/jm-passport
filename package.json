@@ -24,9 +24,9 @@
   },
   "homepage": "https://github.com/jm-root/jm-passport",
   "dependencies": {
-    "jm-passport-mobile": "^1.0.3",
-    "jm-passport-mongodb": "^1.0.2",
-    "jm-server": "^1.0.2",
+    "jm-passport-mobile": "^1.0.4",
+    "jm-passport-mongodb": "^1.0.3",
+    "jm-server": "^1.0.3",
     "passport": "^0.3.2"
   },
   "devDependencies": {

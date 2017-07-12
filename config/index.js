@@ -1,6 +1,8 @@
 require('log4js').configure(__dirname + '/log4js.json');
 var config = {
     development: {
+        debug: true,
+        lng: 'zh_CN',
         port: 3000,
         gateway: 'http://api.mx.jamma.cn',
         modules: {
@@ -12,6 +14,7 @@ var config = {
         }
     },
     production: {
+		lng: 'zh_CN',
         port: 3000,
         gateway: 'http://api.mx.jamma.cn',
         redis: 'redis://redis.db',
