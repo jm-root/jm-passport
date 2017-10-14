@@ -1,6 +1,6 @@
 {
   "name": "jm-passport",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "general passport service",
   "main": "./lib/index",
   "scripts": {
@@ -24,13 +24,8 @@
   },
   "homepage": "https://github.com/jm-root/jm-passport",
   "dependencies": {
-    "jm-passport-mobile": "^1.0.4",
-    "jm-passport-mongodb": "^1.0.3",
     "jm-server": "^1.0.3",
-    "passport": "^0.3.2"
-  },
-  "devDependencies": {
-    "bluebird": "^3.5.0",
-    "benchmark": "^2.1.4"
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
   }
 }
