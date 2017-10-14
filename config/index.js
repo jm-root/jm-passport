@@ -4,7 +4,7 @@ var config = {
     debug: true,
     lng: 'zh_CN',
     port: 3000,
-    gateway: 'http://localhost:3001',
+    gateway: 'http://api.h5.jamma.cn:81',
     modules: {
       'passport': {
         module: process.cwd() + '/lib'
