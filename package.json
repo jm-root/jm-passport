@@ -1,11 +1,12 @@
 {
   "name": "jm-passport",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "general passport service",
   "main": "./lib/index",
   "scripts": {
-    "start": "node node_modules/jm-server/bin/jm-server",
-    "cluster": "node node_modules/jm-server/bin/jm-server --cluster"
+    "start": "jm-server",
+    "cluster": "jm-server --cluster",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -24,8 +25,9 @@
   },
   "homepage": "https://github.com/jm-root/jm-passport",
   "dependencies": {
-    "jm-server": "^1.0.3",
-    "passport": "^0.3.2",
-    "passport-local": "^1.0.0"
+    "jm-server": "^1.0.9"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3"
   }
 }

@@ -1,10 +1,10 @@
 require('log4js').configure(require('path').join(__dirname, 'log4js.json'))
-var config = {
+let config = {
   development: {
     debug: true,
     lng: 'zh_CN',
     port: 3000,
-    gateway: 'http://api.h5.jamma.cn:81',
+    gateway: 'http://api.jamma.cn',
     modules: {
       'passport': {
         module: process.cwd() + '/lib'
@@ -12,7 +12,6 @@ var config = {
     }
   },
   production: {
-    lng: 'zh_CN',
     port: 80,
     gateway: 'http://gateway.app',
     modules: {
