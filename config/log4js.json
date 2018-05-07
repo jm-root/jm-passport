@@ -15,7 +15,7 @@
       "pattern": "-yyyyMMdd.log",
       "alwaysIncludePattern": true,
       "category": [
-        "sso"
+        "passport"
       ]
     },
     {
@@ -24,7 +24,6 @@
   ],
   "replaceConsole": true,
   "levels": {
-    "passport": "info",
-    "jm-server": "info"
+    "passport": "info"
   }
 }
