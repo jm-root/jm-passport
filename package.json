@@ -1,6 +1,6 @@
 {
   "name": "jm-passport",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "general passport service",
   "main": "./lib/index",
   "scripts": {
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/jm-root/jm-passport",
   "dependencies": {
-    "jm-server": "^1.0.9"
+    "jm-server": "^2.0.5"
   },
   "devDependencies": {
     "jest": "^22.4.3"

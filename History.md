@@ -1,5 +1,8 @@
 # History
 
+## 2.0.2 / 2018-08-02
+- jm-server@2.0.5
+
 ## 2.0.1 / 2018-05-07
 - es6
 - remove passport
